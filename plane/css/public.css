@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td,figure{margin:0;padding:0;}
+body{font:12px  "宋体"; word-wrap:break-word;}
+a,u,s,del{color:#666;text-decoration:none;} 
+i,em,b{font-style:normal;font-weight:100;}
+li{list-style:none;}
+img{vertical-align:middle;}
+fieldset ,a img,.bor0 {border:0;}
+table{border-collapse:collapse;}/*合并表格边框*/
+
+.ind2{text-indent:2em;} 
+.cu{cursor:pointer;}
+/*垂直对齐属性*/
+.valign:after{content:"";display:inline-block;vertical-align:middle;width:0px;height:100%;}
+/*文本溢出出现省略号*/
+.over{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+/*clear清除浮动和防止margin-top向上传递*/
+.clear{zoom:1;/*只有ie能识别*/}
+.clear:before{content:"";display:table;}
+.clear:after{content:"";display:block;clear:both;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	</head>
+	<style type="text/css">
+		body{background:#666;}
+		#head{width:800px;height:80px;position:absolute;left:0;right:0;margin:auto;top:80px;text-align: center;display: none;}
+		#head h3{font:24px/30px "";}
+		#bossBlood{height:20px;border:1px solid red;border-radius: 10px;}
+		#blood{height:100%;background:darkred;border-radius: 10px;}
+		#gameBox{position: absolute;width:400px;height:350px;border:1px solid red;right:10px;top:200px;
+		padding: 5px;}
+		p{margin:0 auto;text-align: center; font:20px/24px "";}
+		strong{color:white;}
+		.level{text-align: center;font:20px/24px "";margin-top:20px;}
+		i{color:red;margin-left:20px;}
+		.help{text-align: center;font:18px/24px "";margin-top:20px;}
+		.map{width:400px;height:500px;border:1px solid #0099FF;position:relative;margin:150px auto 0;overflow: hidden;}
+		ul{width:400px;height:1000px;position:absolute;left:0;bottom:0;}
+		.bg{width:400px;height:500px;background:url(img/planeBg.png) no-repeat;}
+		.selfPlane{width:35px;height:35px; background:url(img/plane.png);position:absolute;bottom:0;left:0;
+		right:0;}
+		.bullets{width:10px;height:20px;background:url(img/bullet1.png);position: absolute;}
+		.foebullets{width:10px;height:10px;border-radius:50%;background:url(img/foeBullet.png);position: absolute;}
+		.bossbullets{width:10px;height:10px;border-radius:50%;background:url(img/bossbullet.png);position: absolute;}
+		.foe1{width:30px;height:30px; background:url(img/foe1.png); position: absolute;}
+		.foe2{width:60px;height:60px; background:url(img/foe2.png); position: absolute;}
+		.foe3{width:100px;height:100px; background:url(img/foe3.png); position: absolute;}
+		.foe4{width:150px;height:150px; background:url(img/foe4.png); position: absolute;}
+		.buff1{width:30px;height:30px;background: url(img/buff1.png); position:absolute;}
+		.buff2{width:30px;height:30px;background: url(img/buff2.png); position:absolute;}
+		.boss{width:400px;height:150px;background:url(img/boss.png);position: absolute;left:0;top:0;}
+	</style>
+	<body>
+		<div id='head'>
+			<h3 id='tip'>boss即将出现</h3>
+			<div id="bossBlood">
+				<div id="blood"></div>
+			</div>
+		</div>
+		<div id="gameBox">
+			<h3 style='text-align: center; font:20px/40px ""; color:#fff;'>上下左右:W,S,A,D<br>
+			按J发射子弹,按k无敌</h3>
+			<p>分数为:<strong>0</strong></p>
+			<div style='text-align: center; color:deepskyblue;font:20px/24px "";margin-top:20px;'>
+				增益<buff></buff>
+				<img src="img/buff1.png" style='margin-left:20px;'/>
+				子弹威力加强
+			</div>
+			<div style='text-align: center; color:deepskyblue;font:20px/24px "";margin-top:20px;'>
+				增益buff
+				<img src="img/buff2.png" style='margin-left:20px;'/>
+				X<b>1</b>
+				<br />
+				3秒无敌,随机敌人死亡
+			</div>
+			<div class='level'>当前敌人等级为<i>1</i></div>
+			<div class='help'>敌人当前增益效果：<em>无</em></div>
+		</div>
+		<script src="js/plane.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/myDom.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
